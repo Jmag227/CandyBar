@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "REBTM9qU5gg6xopWBu0NlW72ssf0+mOUSOFqrUtGggjcWWMxxoPTV7+BPtZaN1xhP0ze1EFXYJCAZN2N6JbeyA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jarom\\OneDrive\\Desktop\\Final Project\\FinalProj\\ComparePrice\\ComparePrice.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jarom\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\jarom\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
