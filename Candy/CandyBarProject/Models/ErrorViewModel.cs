@@ -1,6 +1,6 @@
 using System;
 
-namespace ComparePrice.Models
+namespace CandyBarProject.Models
 {
     public class ErrorViewModel
     {
