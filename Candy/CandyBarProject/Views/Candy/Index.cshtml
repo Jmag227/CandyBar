@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Candy>
+
+<h2>Candy</h2>
+
+<div style="display: block">
+    <a href="/Candy/InsertCandy/">Add Candy Bar</a>
+</div>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Manufacturer</th>
+        <th>WalmartPrice</th>
+        <th>Ingredients</th>        
+    </tr>
+    
+    @foreach (var candies in Model)
+    {
+        <tr>
+         <td><a href=/Candy/ViewCandy/@candies.Dbid>@candies.Dbid</a></td>         
+         <td>@candies.Name</td>
+         <td>@candies.Manufacturer</td>
+         <td>@candies.WalmartPrice</td>
+         <td>@candies.Ingredients</td>         
+         </tr>        
+    }
+</table>

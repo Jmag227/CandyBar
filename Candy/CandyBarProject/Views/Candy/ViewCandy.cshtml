@@ -1,0 +1,35 @@
+﻿@model Candy
+
+<h3>@Model.Name Information</h3>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>WalmartPrice</th>
+        <th>Manufacturer</th>
+        <th>Ingredients</th>       
+    </tr>
+    <tr>
+        <td>@Model.Dbid</td>
+        <td>@Model.Name</td>
+        <td>@Model.WalmartPrice</td>
+        <td>@Model.Manufacturer</td>
+        <td>@Model.Ingredients</td>        
+    </tr>
+
+</table>
+
+<div style="display: block">
+    <a href="/Candy/UpdateCandy/@Model.Dbid">Update this CandyBar</a>
+</div>
+
+<div style="display: block">
+    @using (Html.BeginForm("DeleteCandy", "Candy", "Post"))
+    {
+        <input type="hidden" asp-for="Dbid" value="@Model.Dbid" />
+        <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this CandyBar" />
+    }
+</div>
+
+

@@ -1,0 +1,26 @@
+﻿@model Candy
+
+<h2>Update @Model.Name</h2>
+
+@using (Html.BeginForm("UpdateDatabase", "Candy", "Post"))
+{
+    <input asp-for="Dbid" type="hidden" value="@Model.Dbid" />
+
+    <label asp-for="Name" class="control-label">Name</label>
+
+    <input type="text" name="Name" class="form-control" value="@Model.Name" />
+
+    <label asp-for="Manufacturer" class="control-label">Manufacturer</label>
+
+    <input type="text" name="Manufacturer" class="form-control" value="@Model.Manufacturer" />
+
+    <label asp-for="WalmartPrice" class="control-label">WalmartPrice</label>
+
+    <input type="number" step="0.01" name="Price" class="form-control" value="@Model.WalmartPrice" />
+
+    <label asp-for="Ingredients" class="control-label">Ingredients</label>
+
+    <input type="text" name="Ingredients" class="form-control" value="@Model.Ingredients" />
+
+    <input type="submit" value="Update Candy" class="btn btn-primary" />
+}

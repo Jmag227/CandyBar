@@ -6,12 +6,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
 
-namespace CandyBarProject
+namespace ComparePrice
 {
     public class Startup
     {
@@ -25,15 +23,6 @@ namespace CandyBarProject
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<IDbConnection>((s) =>
-            {
-                IDbConnection conn = new MySqlConnection(Configuration.GetConnectionString("CandyBar"));
-                conn.Open();
-                return conn;
-            });
-
-            services.AddTransient<ICandy, CandyRepo>();
-
             services.AddControllersWithViews();
         }
 
