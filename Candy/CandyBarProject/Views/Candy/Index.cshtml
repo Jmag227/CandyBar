@@ -12,7 +12,8 @@
         <th>Name</th>
         <th>Manufacturer</th>
         <th>WalmartPrice</th>
-        <th>Ingredients</th>        
+        <th>Ingredients</th> 
+        <th></th>
     </tr>
     
     @foreach (var candies in Model)
@@ -22,7 +23,8 @@
          <td>@candies.Name</td>
          <td>@candies.Manufacturer</td>
          <td>@candies.WalmartPrice</td>
-         <td>@candies.Ingredients</td>         
+         <td>@candies.Ingredients</td>  
+         <td><img src="~/Pics.img/ChocoIcon.png" alt="Hershy's Kiss'" width="60" height="40"></td>         
          </tr>        
     }
 </table>
