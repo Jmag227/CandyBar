@@ -14,3 +14,8 @@ td {
 a{
     color: whitesmoke;
 }
+
+.dark-nav {
+    background-color: rgb(24, 26, 27);
+    color: #404040;
+}

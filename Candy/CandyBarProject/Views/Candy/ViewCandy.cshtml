@@ -13,24 +13,29 @@
     </tr>
     <tr>
         <td>@Model.Dbid</td>
-        <td>@Model.Name</td>
-        <td>@Model.WalmartPrice</td>
+        <td>@Model.Name</td>        <td>@Model.WalmartPrice</td>
         <td>@Model.Manufacturer</td>
         <td>@Model.Ingredients</td>        
     </tr>
 
 </table>
-<div class="center" style="display: block">    
-        <a href="/Candy/UpdateCandy/@Model.Dbid">Update this CandyBar</a> 
+ <br />
+ <br />
+ <br />
+ <br />
+<div style="display: block"> 
+   
+        <a href="/Candy/UpdateCandy/@Model.Dbid">
+            <button class="btn btn-light">Update this CandyBar</button></a>     
 </div>
 
 <br />
 
-<div class="center" style="display: block">    
+<div style="display: block">    
     @using (Html.BeginForm("DeleteCandy", "Candy", "Post"))
     {
         <input type="hidden" asp-for="Dbid" value="@Model.Dbid" />
-        <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this CandyBar" />
+        <input class="btn btn-light" type="submit" onclick="return confirm('Are you sure?')" value="Delete this CandyBar" />
     }    
 </div>
 </body>

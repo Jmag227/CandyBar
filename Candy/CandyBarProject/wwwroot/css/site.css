@@ -90,9 +90,11 @@ body {
 }
 
 .navclr {
-    background-color: rgb(255, 210, 210);
-    opacity: 0.7;
+    background-color: rgb(26, 26, 26);
+    opacity: 0.8  
+
 }
+
 
 .backdrop {
     background-color: rgb(26, 26, 26)
