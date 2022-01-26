@@ -27,7 +27,7 @@ namespace CandyBarProject
         {
             services.AddScoped<IDbConnection>((s) =>
             {
-                IDbConnection conn = new MySqlConnection(Configuration.GetConnectionString("CandyBar"));
+                IDbConnection conn = new MySqlConnection(Configuration.GetConnectionString("azure"));
                 conn.Open();
                 return conn;
             });
